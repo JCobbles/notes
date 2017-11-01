@@ -1,4 +1,4 @@
-var { User } = require('./dbController');
+var { User } = require('../controllers/dbController');
 var LocalStrategy = require('passport-local').Strategy
 var bCrypt = require('bcrypt-nodejs');
 
