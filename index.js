@@ -41,6 +41,11 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/index.html');
 });
 
+//TEMPORARY:
+app.get('/home', function(request, response) {
+  response.sendFile(__dirname + '/home.html');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

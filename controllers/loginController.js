@@ -9,7 +9,7 @@ module.exports = {
 
   register: passport.authenticate('signup', {
     successRedirect: '/home',
-    failureRedirect: '/signup',
+    failureRedirect: '/',
     failureFlash : true 
   }),
 }
