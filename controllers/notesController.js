@@ -21,13 +21,14 @@ module.exports = {
   },
 
   create: (req, res) => {
+    console.log(req.body);
     Note.create({
-        text : req.body.text,
-        done : false
+        title : req.body.title,
+        body : req.body.body
     }, (err, todo) => {
         if (err)
             res.send(err);
-
+        console.log(todo);
         // get and return all the notes after you create another
         Note.find(function(err, notes) {
             if (err)

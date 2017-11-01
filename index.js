@@ -27,15 +27,15 @@ app.post('/api/login', loginController.login);
 
 app.post('/api/register', loginController.register);
 
-app.post('/api/create', notesController.create);
+app.post('/api/notes', notesController.create);
 
-app.delete('/api/delete/:id', notesController.delete);
+app.delete('/api/notes/:id', notesController.delete);
 
 app.get('/api/notes', notesController.getAll);
 
 app.get('/api/notes/:id', notesController.getById);
 
-app.put('/api/update/:id', notesController.update);
+app.put('/api/notes/:id', notesController.update);
 
 app.get('/', function(request, response) {
   response.sendFile(__dirname + '/index.html');
