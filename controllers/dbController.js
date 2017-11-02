@@ -18,6 +18,7 @@ var noteSchema = mongoose.Schema({
 var userSchema = mongoose.Schema({
   username: String,
   password: String,
+  noteIds: [String],
 });
 
 var User = mongoose.model('User', userSchema);

@@ -1,5 +1,15 @@
 <html>
   <body>
     <h1>Homepage</h1>
+    <form method="POST" action="/api/notes">
+      <label><b>Title</b></label>
+      <input type="text" placeholder="Title" name="title" required>
+      <br>
+      <label><b>Text</b></label>
+      <input type="text" placeholder="Text" name="body" required>
+
+      <button type="submit">Create Note</button>
+
+    </form>
   </body>
 </html>
